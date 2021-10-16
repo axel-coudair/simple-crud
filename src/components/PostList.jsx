@@ -27,11 +27,11 @@ export default function PostList() {
   ));
 }
 const Post = ({ title, body }) => (
-  <>
-    <span>title : {title}</span>
+  <div data-testid="post">
+    <span data-testid="post-title">title : {title}</span>
     <br />
-    <span>body : {body}</span>
+    <span data-testid="post-body">body : {body}</span>
     <br />
     <br />
-  </>
+  </div>
 );
