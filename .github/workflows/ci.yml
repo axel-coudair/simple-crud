@@ -10,4 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run Jest
-      uses: stefanoeb/jest-action@1.0.3
+      env: 
+        REACT_APP_API_BASE_URL: ${{secrets.REACT_APP_API_BASE_URL}}
+      uses: stefanoeb/jest-action@1.0.4
+      
