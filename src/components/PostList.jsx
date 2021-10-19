@@ -12,7 +12,7 @@ const useFetch = (url, intialValue) => {
           throw new Error("Failed at getting items");
         });
     })();
-  }, []);
+  }, [url]);
   return [items];
 };
 
